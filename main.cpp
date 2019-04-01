@@ -27,8 +27,7 @@ BSTNode* sort(int start, int end, vector<int> vector_d) {
 }
 
 BSTNode* create_minimal_BST(vector<int> vector_c) {
-    int last = vector_c.size() - 1;
-    return sort(0, last, vector_c);
+    return sort(0, vector_c.size() - 1, vector_c);
 }
 
 void print(BSTNode* N) {
